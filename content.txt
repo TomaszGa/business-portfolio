@@ -1,0 +1,57 @@
+Bootstrap 4 navbar
+
+Parallax header, scroll to offer
+
+About us
+
+ We're a web development studio based in Berlin. We'll help build or improve the online presence of you or your company. We design and build modern, responsive websites tailored to your individual needs.
+
+Here's what I can do for you/Here's why you should work with me:
+
+Responsive design: up to 50% of users will visit your site from a mobile device. Your website must fit their needs and adapt to devices of any size. We take care of that.
+
+Optimization: Long loading times will hurt your website, turning away visitors. We optimize our websites to make sure your website doesn't discourage users and search engines.
+
+Search Engine Optimization: We deliver a website that follows best SEO practices, making your content more visible and greatly increasing the amount of visitors.
+
+Hosting: We company set up and maintain the right hosting solution for your website.
+
+Coaching: If you prefer to maintain your site by yourself, we will make sure to prepare you for it.
+
+Support: We provide long term support and maintenance.	
+
+Wordpress: 
+
+SERVICES:
+
+New site:
+
+We will design and build a brand new website customized to your needs.
+
+Optimization & Maintenance:
+
+We will work on your existing site to improve loading times and fix any issues we may find.
+
+Modification & Redesign: 
+
+We will work on your existing site and modify it to your liking or modernize its design.
+
+Wordpress conversion:
+
+We will rebuild your existing site with a powerful content management system, allowing you to easily modify content from a user friendly control panel.
+
+Woocommerce:
+
+If you want to expand your business and start selling your products online, we will set up a store on your website using the leading WooCommerce platform. 
+
+Portfolio:
+
+Northwood
+
+Landing template?
+
+Blog template?
+
+Cabin?
+
+Build more shit
