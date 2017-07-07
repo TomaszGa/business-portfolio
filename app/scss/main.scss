@@ -1,0 +1,156 @@
+/*GLOBAL*/
+$header-text-color: white;
+$content-text-color: #444;
+
+body, html{
+	height: 100%;
+	font-family: "Roboto", helvetica, arial;
+}
+/*NAVBAR*/
+.nav-item{
+	text-transform: uppercase;
+}
+.navbar{
+	padding: 1rem 1rem;
+	position: absolute !important;
+	a{
+		color: $header-text-color;
+	}
+	li{
+		font-size: 0.8rem;
+		font-weight: 900;
+		margin: 0 1rem;
+	}
+}
+.navbar-inverse .navbar-nav .nav-link{
+	color: white;
+}
+.navbar-inverse .navbar-nav .nav-link:hover{
+	color: white;
+}
+.navbar-alt{
+	background-color: rgba(255,255,255,0);
+}
+.fa-bars{
+  color: #444;
+}
+.navbar a.navbar-brand{
+font-size: 1.5rem !important;
+}
+@media (max-width: 992px) {
+.navbar{
+	padding: 0.2rem 1rem;
+}
+.navbar-alt{
+	background-color: rgba(255,255,255,1);
+}
+.navbar-inverse .navbar-nav .nav-link{
+	color: #444;
+}
+.navbar-inverse .navbar-nav .nav-link:hover{
+	color: #444;
+}
+.navbar-brand{
+	color: #444 !important;
+}
+.navbar-toggler{
+	margin-top: 8px;
+}
+}
+
+/*HEADER*/
+.main-header{
+	background: url(../img/laptop-header.jpg) center center;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 70vh;
+}
+
+.header-wrapper{
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	display: flex;
+	align-items: center;
+}
+.header-text{
+	color: $header-text-color;
+	text-align: center;
+}
+.header-text h1{
+	font-size: 3.7rem;
+	font-weight: 900;
+}
+.header-text hr{
+	border-bottom: 5px solid;
+	width: 10%;
+}
+.header-text h2{
+	font-weight: 900;
+}
+@media (max-width: 992px) {
+  .main-header {
+ 	height: 100vh;
+  }
+  .header-text h1{
+  	font-size: 2.9rem;
+  }
+  .header-text h2{
+  	font-size: 2rem
+  }
+}
+/*CONTENT*/
+.content-text{
+	margin: 2.5rem 0;
+	color: $content-text-color;
+}
+.content-title{
+	font-weight: 900;
+	font-size: 2.5rem;
+	letter-spacing: 0.3px;
+}
+.content-subtitle{
+font-size: 1.4rem;
+}
+.content-info{
+	font-size: 0.8rem;
+	color: grey;
+}
+.older-button-box{
+	margin: 1rem 0;
+	display: flex;
+	flex-direction: row-reverse;
+}
+.older-button{
+	outline: none;
+	background-color: white;
+	border: 1px solid lightgrey;
+	border-radius: 0;
+	padding: 15px 25px;
+	font-weight: 700;
+	font-size: 0.8rem;
+}
+.older-button:active{
+border: 1px solid grey;
+}
+.older-button:hover{
+	background-color: $content-text-color;
+	color: white;
+}
+.older-button:focus{
+	outline: none;
+}
+/*FOOTER*/
+.main-footer{
+	text-align: center;
+}
+.icons-main{
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	font-size: 1.5rem;
+}
+.copyright-text{
+	font-size: 0.8rem;
+	color: grey;
+}
