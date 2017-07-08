@@ -6,7 +6,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">    
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
@@ -14,10 +15,10 @@
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <i class="fa fa-bars" aria-hidden="true"></i>
   </button>
-  <a class="navbar-brand" href="#" id="navbar-title">Web Dev</a>
+  <a class="navbar-brand" href="#" id="navbar-title">&lt;Web Dev&gt;</a>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
+    <ul class="navbar-nav ml-auto align-items-lg-center">
+      <li class="nav-item ">
         <a class="nav-link" href="#">Home</a>
       </li>
       <li class="nav-item">
@@ -27,7 +28,7 @@
         <a class="nav-link" href="#">Portfolio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" id="contact-link" href="#">Contact Us</a>
       </li>      
     </ul>
   </div>
@@ -43,7 +44,7 @@
 					<h1>Website Developers</h1>
 					<hr>
 					<h2>Beautiful, affordable websites</h2>
-          <h3>Call to action button thing here</h3>
+          <a href="#" class="call-to-action">Get a Quote now >></a>
 				</div>
 			</div>
 		</div>
@@ -55,31 +56,89 @@
       <div class="offset-md-1 col-md-10">
         <section class="content-text">
           <h2 class="content-title">Taking website development from start to finish.</h2>
-          <h3 class="content-subtitle">Best value for your business!</h3>
         </section>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6">
-        <h3 class="description-heading">What we can do for you</h3>
-        <p class="description-content">Fruitful Software is a run by Beau Carnes. Beau has been creating websites for over fifteen years. Fruitful Software was started to help improve the lives of people in Saginaw and the world. The goal is to serve both the needs of our customers and others at the same time. We are a misisonal company.</p>
-        <p class="description-content">Fruitful Software is a run by Beau Carnes. Beau has been creating websites for over fifteen years. Fruitful Software was started to help improve the lives of people in Saginaw and the world. The goal is to serve both the needs of our customers and others at the same time. We are a misisonal company.</p>              
+      <div class="col-md-6 content-section">
+        <p class="description-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad vero nulla impedit obcaecati, nemo exercitationem vitae, iusto neque inventore tempora sapiente eaque nam ullam ipsum assumenda officia. Dicta, id, maxime.</p>
+        <p class="description-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam culpa magnam temporibus architecto incidunt. Magni, voluptate.</p>
+        <a href="#" class="more-link">Read more >></a>                          
       </div>
       <div class="col-md-6">
         <img class="img-fluid content-image" src="img/webdev2.jpg" alt="">  
       </div>
-      <a href="#" class="more-link">Find out more about this</a>    
+
     </div>
   </div>
   <hr>
   <div class="container">
     <div class="row">
-      <div class="col-md-6"></div>
-      <div class="col-md-6"></div>      
+      <div class="col">
+        <h2 class="content-title content-title-features">Features</h2>
+      </div>
+    </div>
+    <div class="row icons-stack">
+      <div class="col-md-4 col-sm-6">
+        <object type="image/svg+xml" data="icons/core/anchor.svg" alt="anchor icon" class="features-icon"></object>
+        <p>Responsive Design</p>  
+        <a href="#" class="more-link">Read More >></a>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <object type="image/svg+xml" data="icons/core/triangle.svg" alt="anchor icon" class="features-icon"></object>
+        <p>Optimisation</p>
+        <a href="#" class="more-link">Read More >></a>        
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <object type="image/svg+xml" data="icons/core/menu.svg" alt="anchor icon" class="features-icon"></object>
+        <p>Hosting</p>
+        <a href="#" class="more-link">Read More >></a>        
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <object type="image/svg+xml" data="icons/core/calendar.svg" alt="anchor icon" class="features-icon"></object>
+        <p>SEO</p>
+        <a href="#" class="more-link">Read More >></a>        
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <object type="image/svg+xml" data="icons/core/circle.svg" alt="anchor icon" class="features-icon"></object>
+        <p>Long-term support</p>
+        <a href="#" class="more-link">Read More >></a>        
+      </div>
+      <div class="col-md-4 col-sm-6">      
+        <object type="image/svg+xml" data="icons/core/square.svg" alt="anchor icon" class="features-icon"></object>
+        <p>Long-term support</p>
+        <a href="#" class="more-link">Read More >></a>        
+      </div>                      
+    </div>
+  </div>
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="offset-md-1 col-md-10">
+        <section class="content-text">
+          <h2 class="content-title">Recent work</h2>
+        </section>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 content-section">
+        <img src="img/coding2.jpg" class="img-fluid content-image" alt="placeholder">
+        <p class="description-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad vero nulla impedit obcaecati, nemo exercitationem vitae, iusto neque inventore tempora sapiente eaque nam ullam ipsum assumenda officia. Dicta, id, maxime.</p>
+        <a href="#" class="more-link">Read more >></a>                          
+      </div>
+      <div class="col-md-4 content-section">
+        <img src="img/laptop.jpg" class="img-fluid content-image" alt="placeholder">
+        <p class="description-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad vero nulla impedit obcaecati, nemo exercitationem vitae, iusto neque inventore tempora sapiente eaque nam ullam ipsum assumenda officia. Dicta, id, maxime.</p>
+        <a href="#" class="more-link">Read more >></a>                          
+      </div>
+      <div class="col-md-4 content-section">
+        <img src="img/coding1.jpg" class="img-fluid content-image" alt="placeholder">
+        <p class="description-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad vero nulla impedit obcaecati, nemo exercitationem vitae, iusto neque inventore tempora sapiente eaque nam ullam ipsum assumenda officia. Dicta, id, maxime.</p>
+        <a href="#" class="more-link">Read more >></a>                          
+      </div>            
     </div>
   </div>
 </main>
-<hr>
 <footer class="main-footer">
   <div class="container">
     <div class="row">
@@ -100,10 +159,12 @@
     </div>  
     <div class="row">
       <div class="offset-md-2 col-md-8">
-        <p class="copyright-text">Cloned by Tomasz Galina</p>
+        <p class="copyright-text">Built by Website Developers</p>
       </div>
     </div>
   </div>
+
+
 </footer>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
