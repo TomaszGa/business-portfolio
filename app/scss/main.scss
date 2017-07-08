@@ -1,14 +1,20 @@
 /*GLOBAL*/
 $header-text-color: white;
 $content-text-color: #444;
+$heading-fontstack: "nunito", "Open Sans", helvetica, arial, sans-serif;	
+
 
 body, html{
 	height: 100%;
-	font-family: "Roboto", helvetica, arial;
+	font-family: "Open Sans", helvetica, arial, sans-serif;
 }
 /*NAVBAR*/
 .nav-item{
 	text-transform: uppercase;
+}
+.nav-item .nav-link{
+	font-size: 1.1rem;
+	font-family: $heading-fontstack;			
 }
 .navbar{
 	padding: 1rem 1rem;
@@ -23,7 +29,7 @@ body, html{
 	}
 }
 .navbar-inverse .navbar-nav .nav-link{
-	color: white;
+	color: $header-text-color;
 }
 .navbar-inverse .navbar-nav .nav-link:hover{
 	color: white;
@@ -32,10 +38,12 @@ body, html{
 	background-color: rgba(255,255,255,0);
 }
 .fa-bars{
-  color: #444;
+ 	color: #444;
 }
 .navbar a.navbar-brand{
-font-size: 1.5rem !important;
+	font-size: 2.5rem !important;
+	font-family: $heading-fontstack;
+	margin-left: 2rem;
 }
 @media (max-width: 992px) {
 .navbar{
@@ -60,11 +68,11 @@ font-size: 1.5rem !important;
 
 /*HEADER*/
 .main-header{
-	background: url(../img/laptop-header.jpg) center center;
+	background: url(../img/webdev1.jpg) center center;
 	background-size: cover;
 	background-attachment: fixed;
 	width: 100%;
-	height: 70vh;
+	height: 100vh;
 }
 
 .header-wrapper{
@@ -81,13 +89,15 @@ font-size: 1.5rem !important;
 .header-text h1{
 	font-size: 3.7rem;
 	font-weight: 900;
+	font-family: $heading-fontstack;	
 }
 .header-text hr{
-	border-bottom: 5px solid;
+	border-bottom: 2px solid;
 	width: 10%;
 }
 .header-text h2{
 	font-weight: 900;
+	font-family: $heading-fontstack;	
 }
 @media (max-width: 992px) {
   .main-header {
@@ -103,15 +113,25 @@ font-size: 1.5rem !important;
 /*CONTENT*/
 .content-text{
 	margin: 2.5rem 0;
+	text-align: center;
 	color: $content-text-color;
 }
 .content-title{
 	font-weight: 900;
 	font-size: 2.5rem;
 	letter-spacing: 0.3px;
+	font-family: $heading-fontstack;
 }
 .content-subtitle{
-font-size: 1.4rem;
+	font-size: 1.4rem;
+	font-family: $heading-fontstack;
+}
+.description-heading{
+	font-family: $heading-fontstack;
+	font-size: 2.3rem;
+}
+.description-content{
+	font-size: 1.3rem;
 }
 .content-info{
 	font-size: 0.8rem;
@@ -140,6 +160,14 @@ border: 1px solid grey;
 }
 .older-button:focus{
 	outline: none;
+}
+.content-image{
+	border-radius: 10px;
+	box-shadow: 0px 0px 15px #777777;
+	margin-top: 3rem;
+}
+.more-link{
+	text-align: center;
 }
 /*FOOTER*/
 .main-footer{
