@@ -205,6 +205,11 @@ body, html{
 	color: $accent-color-2;
 }
 /* FEATURES */
+.features-wrap{
+	background-color: #ECECEC;	
+	border-top: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+}
 .content-title-features{
 	margin-top: 2rem;
 	margin-bottom: 4rem;
@@ -318,11 +323,20 @@ body, html{
 /*FOOTER*/
 .main-footer{
 	text-align: center;
+	background-color: #ECECEC;
+	border-top: 1px solid lightgrey;
+	margin-top: 3rem;
 }
 .icons-main{
 	margin-top: 3rem;
 	margin-bottom: 3rem;
 	font-size: 1.5rem;
+}
+.fa-circle{
+	color: $accent-color-2;
+}
+.fa-stack-1x{
+	color: $header-text-color;
 }
 .copyright-text{
 	font-size: 0.8rem;
