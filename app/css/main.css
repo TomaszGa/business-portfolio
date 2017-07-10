@@ -32,20 +32,44 @@ body, html {
 .navbar-alt {
   background-color: rgba(255, 255, 255, 0); }
 
+.menu-text {
+  font-size: 3rem; }
+
 .fa-bars {
-  color: #444; }
+  color: #F2F2F2;
+  font-size: 3rem; }
+
+.navbar-toggler {
+  border: 3px solid #F2F2F2 !important; }
 
 .navbar a.navbar-brand {
+  position: absolute;
+  top: 0;
   font-size: 2.5rem !important;
   font-family: "Dosis", "Open Sans", helvetica, arial, sans-serif;
   margin-left: 2rem;
   color: #F2F2F2; }
+  .navbar a.navbar-brand .bracket-left {
+    color: #52d4e2;
+    font-size: 3.3rem; }
+  .navbar a.navbar-brand .bracket-right {
+    color: #ffe97a;
+    font-size: 3.3rem; }
 
 #contact-link {
-  border: 3px solid #029eb4;
+  border: 3px solid #F2F2F2;
   font-size: 1.5rem;
   margin-right: 50px;
-  color: #029eb4; }
+  color: #F2F2F2;
+  position: absolute;
+  top: 15px;
+  right: 50px;
+  transition: 1s; }
+
+#contact-link:hover {
+  /* 	color: $accent-color;
+	border: 3px solid $accent-color; */
+  text-decoration: underline; }
 
 @media (max-width: 992px) {
   .navbar {
@@ -58,9 +82,12 @@ body, html {
   .navbar-inverse .navbar-nav .nav-link:hover {
     color: #444; }
   .navbar-brand {
-    color: #444 !important; }
+    color: #029eb4 !important; }
   .navbar-toggler {
     margin-top: 8px; } }
+
+.navbar-toggler {
+  margin: 0 auto; }
 
 /*HEADER*/
 .main-header {
@@ -68,7 +95,8 @@ body, html {
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
-  height: 100vh; }
+  height: 71.5vh;
+  border-bottom: 1px solid lightgrey; }
 
 .header-wrapper {
   height: 100%;
@@ -79,45 +107,46 @@ body, html {
 
 .header-text {
   color: #F2F2F2;
-  text-align: center; }
+  text-align: left; }
 
 .header-text h1 {
-  font-size: 5.3rem;
+  font-size: 5.2rem;
   font-weight: 700;
   font-family: "Dosis", "Open Sans", helvetica, arial, sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: 0rem;
+  color: #029eb4; }
 
+/* .header-text .dot-tech-color{
+	color: $accent-color-2;
+} */
 .header-text hr {
   border-bottom: 3px solid;
   width: 25%;
-  color: #029eb4; }
+  color: #029eb4;
+  margin-left: 5rem; }
 
 .header-text h2 {
   font-family: "Dosis", "Open Sans", helvetica, arial, sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #F2F2F2; }
+  color: #ed8955; }
 
 .call-to-action {
   display: inline-block;
-  /* 	font-family: $heading-fontstack;
- */
   color: #F2F2F2;
   background-color: transparent;
-  font-size: 1.6rem;
-  border: 3px solid white;
+  font-size: 2rem;
+  border: 3px solid #F2F2F2;
   padding: 5px 10px;
-  margin: 0 auto;
-  margin-top: 2rem;
   font-weight: 700;
-  /* 	text-transform: uppercase;
- */
-  transition: 0.8s; }
+  transition: 0.8s;
+  text-align: center;
+  margin-top: 0.8rem; }
 
 .call-to-action:hover {
-  background-color: #029eb4;
-  color: white;
-  border: 3px solid transparent;
+  color: #ed8955;
+  border: 3px solid #ed8955;
   decoration: none; }
 
 @media (max-width: 992px) {
@@ -174,7 +203,7 @@ body, html {
 .more-link {
   display: inline-block;
   padding: 10px 15px;
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: #ed8955;
   border: 2px solid #F2F2F2;
   font-family: "Dosis", "Open Sans", helvetica, arial, sans-serif;
@@ -215,7 +244,7 @@ body, html {
 
 /* PORTFOLIO */
 .portfolio-section {
-  height: 560px;
+  height: 510px;
   transition: 1s; }
 
 .portfolio-subheading {
@@ -224,9 +253,11 @@ body, html {
   color: #ed8955; }
 
 .more-link-portfolio {
+  border: 0;
   position: absolute;
   bottom: 10px;
-  left: 25%; }
+  left: 25%;
+  font-size: 1.5rem; }
 
 /* TESTIMONIALS */
 .testimonial-background {
