@@ -1,11 +1,9 @@
 /*GLOBAL*/
-/* ORANGE: #FA7921 */
-/* RED FOR TEST #D3060D */
-/* WEIRD GREEN #00E7D7 */
 body, html {
   height: 100%;
   font-family: "Open Sans", helvetica, arial, sans-serif;
-  background-color: #F2F2F2; }
+  background-color: #F2F2F2;
+  box-sizing: border-box; }
 
 /*NAVBAR*/
 .nav-item {
@@ -44,10 +42,10 @@ body, html {
   color: #F2F2F2; }
 
 #contact-link {
-  border: 3px solid #34888C;
+  border: 3px solid #029eb4;
   font-size: 1.5rem;
   margin-right: 50px;
-  color: #34888C; }
+  color: #029eb4; }
 
 @media (max-width: 992px) {
   .navbar {
@@ -92,12 +90,12 @@ body, html {
 .header-text hr {
   border-bottom: 3px solid;
   width: 25%;
-  color: #34888C; }
+  color: #029eb4; }
 
 .header-text h2 {
   font-family: "Dosis", "Open Sans", helvetica, arial, sans-serif;
   font-size: 2.5rem;
-  font-weight: 900;
+  font-weight: 700;
   color: #F2F2F2; }
 
 .call-to-action {
@@ -114,11 +112,10 @@ body, html {
   font-weight: 700;
   /* 	text-transform: uppercase;
  */
-  border-radius: 5px;
   transition: 0.8s; }
 
 .call-to-action:hover {
-  background-color: #34888C;
+  background-color: #029eb4;
   color: white;
   border: 3px solid transparent;
   decoration: none; }
@@ -143,7 +140,7 @@ body, html {
   letter-spacing: 0.3px;
   font-family: "Dosis", "Open Sans", helvetica, arial, sans-serif;
   text-align: center;
-  color: #34888C;
+  color: #029eb4;
   margin-top: 2rem; }
 
 .content-subtitle {
@@ -165,7 +162,8 @@ body, html {
 
 .content-image {
   border-radius: 5px;
-  box-shadow: 0px 0px 15px #777777;
+  /* 	box-shadow: 0px 0px 15px #777777;
+ */
   margin-bottom: 2rem; }
 
 .content-section {
@@ -177,12 +175,16 @@ body, html {
   display: inline-block;
   padding: 10px 15px;
   font-size: 1.2rem;
-  color: #CB6318;
+  color: #ed8955;
   border: 2px solid #F2F2F2;
   font-family: "Dosis", "Open Sans", helvetica, arial, sans-serif;
   font-weight: 900;
   vertical-align: bottom; }
 
+.more-link:hover {
+  color: #ed8955; }
+
+/* FEATURES */
 .content-title-features {
   margin-top: 2rem;
   margin-bottom: 4rem; }
@@ -203,9 +205,10 @@ body, html {
 
 .features-icon {
   font-size: 5rem;
-  color: #CB6318;
+  color: #ed8955;
   margin-bottom: 1.5rem; }
 
+/* PORTFOLIO */
 .portfolio-section {
   height: 560px;
   transition: 1s; }
@@ -213,12 +216,68 @@ body, html {
 .portfolio-subheading {
   font-family: "Dosis", "Open Sans", helvetica, arial, sans-serif;
   text-align: left;
-  color: #CB6318; }
+  color: #ed8955; }
 
 .more-link-portfolio {
   position: absolute;
   bottom: 10px;
   left: 25%; }
+
+/* TESTIMONIALS */
+.testimonial-background {
+  background: url(../img/laptop.jpg) center center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 60vh;
+  border-top: 1px #999 solid;
+  border-bottom: 1px #999 solid; }
+
+.testimonial-overlay {
+  background-color: rgba(0, 0, 25, 0.7);
+  background-clip: border-box;
+  height: 100%;
+  width: 100%; }
+
+.testimonial-text {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #F2F2F2; }
+  .testimonial-text h3 {
+    font-family: "Dosis", "Open Sans", helvetica, arial, sans-serif;
+    text-align: center;
+    font-size: 2.5rem; }
+  .testimonial-text p {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-style: italic; }
+  .testimonial-text .testimonial-author {
+    text-align: right;
+    margin-right: 5rem;
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: #ed8955; }
+
+/* CONTACT */
+.contact-form input, .contact-form textarea {
+  display: block;
+  width: 70%;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  margin: 1rem auto;
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  background-color: white; }
+
+.contact-form textarea {
+  min-height: 18rem;
+  background-color: white; }
+
+.contact-form button {
+  display: block;
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  background-color: #ed8955;
+  border: 2px solid rgba(0, 0, 0, 0.2); }
 
 /*FOOTER*/
 .main-footer {
