@@ -2,7 +2,7 @@
 $header-text-color: #F2F2F2;
 $header-text-color-darker: #F2F2F2;
 $content-text-color: #444;
-$heading-fontstack: "Montserrat", "Open Sans", helvetica, arial, sans-serif;	
+$heading-fontstack: "Raleway", "Open Sans", helvetica, arial, sans-serif;	
 $accent-color: #029eb4;
 $accent-color-2: #ed8955;
 $accent-color-3: #ffe97a;
@@ -24,13 +24,15 @@ body, html{
 .navbar{
 	padding: 1rem 1rem;
 	position: absolute !important;
+	font-family: $heading-fontstack;
 	a{
 		color: $header-text-color;
 	}
 	li{
 		font-size: 0.8rem;
-		font-weight: 900;
-		margin: 0 1rem;
+		font-weight: 600;
+		margin: 0 0.7rem;
+		margin-top: 0.9rem;
 	}
 }
 .navbar-inverse .navbar-nav .nav-link{
@@ -56,38 +58,26 @@ body, html{
 	position: absolute;
 	top: 0;
 	font-size: 2.5rem !important;
-	font-family: $heading-fontstack;
+	font-family: "Dosis", "Open Sans", helvetica, arial, sans-serif;
 	margin-left: 2rem;
 	margin-top: 1rem;
 	color: $header-text-color;
 	.bracket-left{
-		color: $accent-color-2;
-		font-size: 4rem;
+		color: $header-text-color;
+		font-size: 3rem;
+		padding-left: 0.5rem;
 	}
 	.bracket-right{
-		color: $accent-color;
-		font-size: 4.05rem;	
+		color: $header-text-color;
+		font-size: 3.05rem;	
+		padding-right: 0.5rem;
 	}
-	border-top: 1px solid $accent-color;
-	border-right: 2px solid $accent-color;
-	border-bottom: 1px solid $accent-color-2;
-	border-left: 2px solid $accent-color-2;
+	border-top: 1px solid $header-text-color;
+	border-right: 2px solid $header-text-color;
+	border-bottom: 1px solid $header-text-color;
+	border-left: 2px solid $header-text-color;
 }
-#contact-link{
-	border: 3px solid $header-text-color;
-	font-size: 1.5rem;
-	margin-right: 50px;
-	color: $header-text-color;
-	position: absolute;
-	top: 15px;
-	right: 50px;	
-	transition: 1s;
-}
-#contact-link:hover{
-/* 	color: $accent-color;
-	border: 3px solid $accent-color; */
-	text-decoration: underline;
-}
+
 @media (max-width: 992px) {
 	.navbar{
 		padding: 0.2rem 1rem;
@@ -114,7 +104,7 @@ body, html{
 }
 /*HEADER*/
 .main-header{
-	background: url(../img/building1.jpg) center center;
+	background: url(../img/coding1.jpg) center center;
 	background-size: cover;
 /* 	background-attachment: fixed;
  */	width: 100%;
@@ -125,7 +115,7 @@ body, html{
 .header-wrapper{
 	height: 100%;
 	width: 100%;
-	background-color: rgba(0, 0, 15, 0.65);
+	background-color: rgba(0, 0, 15, 0.55);
 	display: flex;
 	align-items: center;
 }
@@ -149,8 +139,8 @@ body, html{
 	}
 }
 .header-text h1{
-	font-size: 4rem;
-	font-weight: 700;
+	font-size: 3.5rem;
+	font-weight: 800;
 	font-family: $heading-fontstack;	
 	text-transform: uppercase;
 	margin-top: 3rem;
@@ -160,15 +150,14 @@ body, html{
 	color: $accent-color-2;
 } */
 .header-text hr{
-	border-bottom: 3px solid;
+	border-bottom: 2px solid;
 	width: 100%;
 	color: $accent-color;
-	margin-right: 100rem;
 }
 .header-text h2{
 	font-family: $heading-fontstack;
-	font-size: 2rem;		
-	font-weight: 700;
+	font-size: 2.1rem;		
+	font-weight: 500;
 	color: $header-text-color;
 	opacity: 1;
 }
