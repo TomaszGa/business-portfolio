@@ -2,7 +2,7 @@
 $header-text-color: #F2F2F2;
 $header-text-color-darker: #F2F2F2;
 $content-text-color: #444;
-$heading-fontstack: "Dosis", "Open Sans", helvetica, arial, sans-serif;	
+$heading-fontstack: "Montserrat", "Open Sans", helvetica, arial, sans-serif;	
 $accent-color: #029eb4;
 $accent-color-2: #ed8955;
 $accent-color-3: #ffe97a;
@@ -58,15 +58,20 @@ body, html{
 	font-size: 2.5rem !important;
 	font-family: $heading-fontstack;
 	margin-left: 2rem;
+	margin-top: 1rem;
 	color: $header-text-color;
 	.bracket-left{
-		color: $accent-color-4;
-		font-size: 3.3rem;
+		color: $accent-color-2;
+		font-size: 4rem;
 	}
 	.bracket-right{
-		color: $accent-color-3;
-		font-size: 3.3rem;	
+		color: $accent-color;
+		font-size: 4.05rem;	
 	}
+	border-top: 1px solid $accent-color;
+	border-right: 2px solid $accent-color;
+	border-bottom: 1px solid $accent-color-2;
+	border-left: 2px solid $accent-color-2;
 }
 #contact-link{
 	border: 3px solid $header-text-color;
@@ -105,14 +110,14 @@ body, html{
 	}
 }
 .navbar-toggler{
-	margin: 0 auto;
+	margin-left: auto;
 }
 /*HEADER*/
 .main-header{
-	background: url(../img/header1.jpg) center center;
+	background: url(../img/building1.jpg) center center;
 	background-size: cover;
-	background-attachment: fixed;
-	width: 100%;
+/* 	background-attachment: fixed;
+ */	width: 100%;
 	height: 100vh;
 	border-bottom: 1px solid lightgrey;
 }
@@ -120,21 +125,36 @@ body, html{
 .header-wrapper{
 	height: 100%;
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 15, 0.65);
 	display: flex;
 	align-items: center;
 }
 .header-text{
 	color: $header-text-color;
 	text-align: left;
+	a:hover{
+		color: $accent-color;
+		decoration: none;
+	}
+	i{
+		display: block;
+		font-size: 5rem;
+		text-align: center;
+		margin: 0 auto;
+		color: $accent-color;
+		decoration: none;
+	}
+	i:hover{
+		decoration: none;
+	}
 }
 .header-text h1{
-	font-size: 5.2rem;
+	font-size: 4rem;
 	font-weight: 700;
 	font-family: $heading-fontstack;	
 	text-transform: uppercase;
 	margin-top: 3rem;
-	color: $accent-color-2;
+	color: $header-text-color;
 }
 /* .header-text .dot-tech-color{
 	color: $accent-color-2;
@@ -147,7 +167,7 @@ body, html{
 }
 .header-text h2{
 	font-family: $heading-fontstack;
-	font-size: 2.2rem;		
+	font-size: 2rem;		
 	font-weight: 700;
 	color: $header-text-color;
 	opacity: 1;
@@ -190,7 +210,7 @@ body, html{
 }
 .content-title{
 	font-weight: 600;
-	font-size: 2.5rem;
+	font-size: 2.3rem;
 	letter-spacing: 0.3px;
 	font-family: $heading-fontstack;
 	text-align: center;
@@ -348,7 +368,7 @@ body, html{
 	input, textarea{
 		display: block;
 		width:70%;
-		border: 2px solid rgba(0,0,0,0.2);
+		border: 1px solid rgba(0,0,0,0.2);
 		margin: 1rem auto;
 		font-family: "Open Sans", helvetica, arial, sans-serif;
 		background-color: white;
@@ -364,7 +384,7 @@ body, html{
 		margin: 0 auto;
 		font-family: "Open Sans", helvetica, arial, sans-serif;
 		background-color: $accent-color-2;
-		border: 2px solid rgba(0,0,0,0.2)
+		border: 1px solid rgba(0,0,0,0.2)
 	}
 }
 
