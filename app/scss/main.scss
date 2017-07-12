@@ -115,7 +115,7 @@ body, html{
 .header-wrapper{
 	height: 100%;
 	width: 100%;
-	background-color: rgba(0, 0, 15, 0.55);
+	background-color: rgba(0, 0, 15, 0.5);
 	display: flex;
 	align-items: center;
 }
@@ -161,7 +161,7 @@ body, html{
 	color: $header-text-color;
 	opacity: 1;
 }
-.call-to-action{
+/* .call-to-action{
 	display: inline-block;
 	color: $header-text-color;
 	background-color: transparent;
@@ -178,7 +178,7 @@ body, html{
  	color: $accent-color-2;	
 	border: 3px solid $accent-color-2;
 	decoration: none;	
-}
+} */
 
 @media (max-width: 992px) {
   .main-header {
@@ -254,6 +254,10 @@ body, html{
 .more-link:hover{
 	color: $accent-color-2;
 }
+.services-wrap{
+	border-top: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;	
+}
 /* FEATURES */
 .features-wrap{
 	background-color: #ECECEC;
@@ -319,7 +323,6 @@ body, html{
 	background: url(../img/laptop.jpg) center center;
 	background-attachment: fixed;
 	background-size: cover;
-	height: 60vh;
 	border-top: 1px #999 solid;
 	border-bottom: 1px #999 solid;
 }
@@ -350,7 +353,7 @@ body, html{
 		font-size: 1.1rem;
 		font-weight: 100;
 		color: $accent-color-2;
-	}
+	}	
 }
 /* CONTACT */
 
@@ -369,7 +372,7 @@ body, html{
 	}
 	button{
 		display: block;
-		width: 40%;
+		width: 50%;
 		text-align: center;	
 		margin: 0 auto;
 		font-family: "Open Sans", helvetica, arial, sans-serif;
