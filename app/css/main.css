@@ -90,7 +90,7 @@ body, html {
   /* 	background-attachment: fixed;
  */
   width: 100%;
-  height: 100vh;
+  height: 100.1vh;
   border-bottom: 1px solid lightgrey; }
 
 .header-wrapper {
@@ -152,8 +152,8 @@ body, html {
   margin-top: 0.8rem; }
 
 .call-to-action:hover {
-  color: #ed8955;
-  border: 3px solid #ed8955;
+  color: #52d4e2;
+  border: 3px solid #52d4e2;
   decoration: none; }
 
 @media (max-width: 992px) {
@@ -218,21 +218,20 @@ body, html {
   display: inline-block;
   padding: 10px 15px;
   font-size: 2rem;
-  color: #ed8955;
-  border: 2px solid #F2F2F2;
+  color: #52d4e2;
   font-family: "Raleway", "Open Sans", helvetica, arial, sans-serif;
   font-weight: 900;
   vertical-align: bottom; }
 
 .more-link:hover {
-  color: #ed8955; }
+  color: #52d4e2; }
 
 /* FEATURES */
 .features-wrap {
   background-color: #ECECEC;
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
-  padding: 1rem 0 1.5rem 0; }
+  background-size: cover; }
 
 .content-title-features {
   margin-top: 2rem;
@@ -254,7 +253,7 @@ body, html {
 
 .features-icon {
   font-size: 5rem;
-  color: #ed8955;
+  color: #52d4e2;
   margin-bottom: 1.5rem; }
 
 /* PORTFOLIO */
@@ -268,7 +267,8 @@ body, html {
 .portfolio-subheading {
   font-family: "Raleway", "Open Sans", helvetica, arial, sans-serif;
   text-align: left;
-  color: #ed8955; }
+  color: #52d4e2;
+  font-weight: 700; }
 
 .more-link-portfolio {
   border: 0;
@@ -309,19 +309,19 @@ body, html {
     margin-right: 5rem;
     font-size: 1.1rem;
     font-weight: 100;
-    color: #ed8955; }
+    color: #52d4e2; }
 
 /* CONTACT */
 .contact-form input, .contact-form textarea {
   display: block;
-  width: 70%;
+  width: 90%;
   border: 1px solid rgba(0, 0, 0, 0.2);
   margin: 1rem auto;
   font-family: "Open Sans", helvetica, arial, sans-serif;
   background-color: white; }
 
 .contact-form textarea {
-  min-height: 18rem;
+  min-height: 14rem;
   background-color: white; }
 
 .contact-form button {
@@ -330,7 +330,7 @@ body, html {
   text-align: center;
   margin: 0 auto;
   font-family: "Open Sans", helvetica, arial, sans-serif;
-  background-color: #ed8955;
+  background-color: #52d4e2;
   border: 1px solid rgba(0, 0, 0, 0.2); }
 
 /*FOOTER*/
@@ -346,7 +346,7 @@ body, html {
   font-size: 1.5rem; }
 
 .fa-circle {
-  color: #ed8955; }
+  color: #52d4e2; }
 
 .fa-stack-1x {
   color: #F2F2F2; }
