@@ -161,24 +161,6 @@ body, html{
 	color: $header-text-color;
 	opacity: 1;
 }
-/* .call-to-action{
-	display: inline-block;
-	color: $header-text-color;
-	background-color: transparent;
-	font-size: 2rem;
-	border: 3px solid $header-text-color;
-	padding: 5px 10px;
-	font-weight: 700;
-	transition: 0.8s;
- 	text-align: center;	
-	margin-top: 0.8rem;
-
-} 
-.call-to-action:hover{
- 	color: $accent-color-2;	
-	border: 3px solid $accent-color-2;
-	decoration: none;	
-} */
 
 @media (max-width: 992px) {
   .main-header {
@@ -205,6 +187,7 @@ body, html{
 	text-align: center;
 	color: $accent-color;
 	margin-top: 2rem;
+	margin-bottom: 4rem;
 }
 .content-subtitle{
 	font-size: 1.4rem;
@@ -263,18 +246,21 @@ body, html{
 	background-color: #ECECEC;
 	border-top: 1px solid lightgrey;
 	border-bottom: 1px solid lightgrey;
+	background: url(../img/design1.jpg) center center;
 	background-size: cover;
+	background-attachment: fixed;
 }
-
+.features-overlay{
+	background-color: rgba(0,0,10,0.9);
+}
 .content-title-features{
 	margin-top: 2rem;
 	margin-bottom: 4rem;
+	color: $header-text-color;
 }
 .icons-stack{
 	text-align: center;
-	h4{
-		
-	}
+
 	p{
 		font-size: 1rem;
 		margin: 0;
@@ -289,14 +275,27 @@ body, html{
 		font-size: 1.5rem;
 	}
 }
+.icons-stack-features{
+	color: $header-text-color;
+	.more-link{
+		color: $header-text-color;
+	}
+	h4{
+		color: $header-text-color;
+	}
+}
+.services-icon,
 .features-icon{
 	font-size: 5rem;
 	color: $accent-color-2;
 	margin-bottom: 1.5rem;
 }
+.features-icon{
+	color: $header-text-color;
+}
 /* PORTFOLIO */
 .portfolio-wrap{
-	padding: 1.5rem 0 3rem 0;
+	padding: 0rem 0 3rem 0;
 }
 .portfolio-section{
 	height:510px;
