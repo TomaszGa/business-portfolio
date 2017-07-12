@@ -14,8 +14,9 @@ body, html {
   font-size: 1.4rem; }
 
 .navbar {
-  padding: 1rem 1rem;
+  padding: 0.2rem 1rem;
   position: absolute !important;
+  height: 10vh;
   font-family: "Raleway", "Open Sans", helvetica, arial, sans-serif; }
   .navbar a {
     color: #F2F2F2; }
@@ -31,9 +32,6 @@ body, html {
 .navbar-inverse .navbar-nav .nav-link:hover {
   color: #F2F2F2; }
 
-.navbar-alt {
-  background-color: rgba(255, 255, 255, 0); }
-
 .menu-text {
   font-size: 3rem; }
 
@@ -44,42 +42,55 @@ body, html {
 .navbar-toggler {
   border: 3px solid #F2F2F2 !important; }
 
-.navbar a.navbar-brand {
-  position: absolute;
-  top: 0;
-  font-size: 2.5rem !important;
-  font-family: "Dosis", "Open Sans", helvetica, arial, sans-serif;
-  margin-left: 2rem;
-  margin-top: 1rem;
-  color: #F2F2F2;
-  border-top: 1px solid #F2F2F2;
-  border-right: 2px solid #F2F2F2;
-  border-bottom: 1px solid #F2F2F2;
-  border-left: 2px solid #F2F2F2; }
-  .navbar a.navbar-brand .bracket-left {
-    color: #F2F2F2;
-    font-size: 3rem;
-    padding-left: 0.5rem; }
-  .navbar a.navbar-brand .bracket-right {
-    color: #F2F2F2;
-    font-size: 3.05rem;
-    padding-right: 0.5rem; }
+/* .navbar a.navbar-brand{
+	position: absolute;
+	top: 0;
+	font-size: 2.5rem !important;
+	font-family: "Dosis", "Open Sans", helvetica, arial, sans-serif;
+	margin-left: 2rem;
+	margin-top: 1rem;
+	color: $header-text-color;
+	.bracket-left{
+		color: $header-text-color;
+		font-size: 3rem;
+		padding-left: 0.5rem;
+	}
+	.bracket-right{
+		color: $header-text-color;
+		font-size: 3.05rem;	
+		padding-right: 0.5rem;
+	}
+	border-top: 1px solid $header-text-color;
+	border-right: 2px solid $header-text-color;
+	border-bottom: 1px solid $header-text-color;
+	border-left: 2px solid $header-text-color;
+} */
+.navbar a.navbar-brand img {
+  position: static;
+  margin-top: 3rem;
+  margin-left: 2rem; }
 
-@media (max-width: 992px) {
-  .navbar {
-    padding: 0.2rem 1rem; }
-  .navbar-alt {
-    background-color: white; }
-  .navbar-inverse .navbar-nav .nav-link {
-    color: #444;
-    text-align: left !important; }
-  .navbar-inverse .navbar-nav .nav-link:hover {
-    color: #444; }
-  .navbar-brand {
-    color: #029eb4 !important; }
-  .navbar-toggler {
-    margin-top: 8px; } }
-
+/* @media (max-width: 992px) {
+	.navbar{
+		padding: 0.2rem 1rem;
+	}
+	.navbar-alt{
+		background-color: rgba(255,255,255,1);
+	}
+	.navbar-inverse .navbar-nav .nav-link{
+		color: #444;
+		text-align: left !important;
+	}
+	.navbar-inverse .navbar-nav .nav-link:hover{
+		color: #444;
+	}
+	.navbar-brand{
+		color: $accent-color !important;
+	}
+	.navbar-toggler{
+		margin-top: 8px;
+	}
+} */
 .navbar-toggler {
   margin-left: auto; }
 

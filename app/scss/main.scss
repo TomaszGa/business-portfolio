@@ -22,8 +22,9 @@ body, html{
 	font-size: 1.4rem;
 }
 .navbar{
-	padding: 1rem 1rem;
+	padding: 0.2rem 1rem;
 	position: absolute !important;
+	height: 10vh;
 	font-family: $heading-fontstack;
 	a{
 		color: $header-text-color;
@@ -42,7 +43,6 @@ body, html{
 	color: $header-text-color;
 }
 .navbar-alt{
-	background-color: rgba(255,255,255,0);
 }
 .menu-text{
 	font-size: 3rem;
@@ -54,7 +54,7 @@ body, html{
 .navbar-toggler{
 	border: 3px solid $header-text-color !important;
 }
-.navbar a.navbar-brand{
+/* .navbar a.navbar-brand{
 	position: absolute;
 	top: 0;
 	font-size: 2.5rem !important;
@@ -76,9 +76,13 @@ body, html{
 	border-right: 2px solid $header-text-color;
 	border-bottom: 1px solid $header-text-color;
 	border-left: 2px solid $header-text-color;
+} */
+.navbar a.navbar-brand img{
+	position: static;
+	margin-top: 3rem;
+	margin-left: 2rem;
 }
-
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
 	.navbar{
 		padding: 0.2rem 1rem;
 	}
@@ -98,7 +102,7 @@ body, html{
 	.navbar-toggler{
 		margin-top: 8px;
 	}
-}
+} */
 .navbar-toggler{
 	margin-left: auto;
 }
