@@ -16,15 +16,17 @@ body, html{
 }
 /*NAVBAR*/
 .navbar-toggler{
-	margin-top: 1.5rem;
+	margin-top: 0.2rem;
 	border-top: 1px solid white !important;
 	border-bottom: 1px solid white !important;	
 	border-left: 2px solid white !important;
 	border-right: 2px solid white !important;
+	padding: 0.3rem 0.5rem;
+	border-radius: 0;
 }
 .fa-bars{
   color: white;
-  font-size: 2rem;
+  font-size: 3.1rem;
 
 }
 .navbar{
@@ -36,7 +38,7 @@ body, html{
 .navbar-logo{
 	margin-left: -5px;
 	margin-top: 0px;
-	width: 85px ;
+	width: 65px ;
 }
 .navbar-nav{
 	font-family: $heading-fontstack;
@@ -391,4 +393,15 @@ body, html{
 .copyright-text{
 	font-size: 0.8rem;
 	color: grey;
+}
+/* MISC */
+
+.anchor{
+    display: block;
+    position: relative;
+    top: -70px;
+    visibility: hidden;
+}
+.anchor-contact{
+	top: -102px;
 }
