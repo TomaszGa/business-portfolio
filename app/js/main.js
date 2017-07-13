@@ -1,5 +1,15 @@
 $(document).ready(function(){
+	var scrollTop = 0;
+	$(window).scroll(function(){
+    scrollTop = $(window).scrollTop();
+    $('.counter').html(scrollTop);
+    if (scrollTop >= 100) {
+      $('#global-nav').addClass('scrolled-nav');
+	} else if (scrollTop < 100) {
+    $('#global-nav').removeClass('scrolled-nav');
+	} 
 
+	}); 
 	$(function() {
 	  $('a[href*="#"]:not([href="#"])').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -22,6 +32,7 @@ $(document).ready(function(){
 	  });
 	});
 
+  
 	$('.navbar-nav>li>a').on('click', function(){
     	$('.navbar-collapse').collapse('hide');
 	});
