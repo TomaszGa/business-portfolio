@@ -16,17 +16,17 @@ body, html{
 }
 /*NAVBAR*/
 .navbar-toggler{
-	margin-top: 0.2rem;
+	margin-top: 0.28rem;
 	border-top: 1px solid white !important;
 	border-bottom: 1px solid white !important;	
 	border-left: 2px solid white !important;
 	border-right: 2px solid white !important;
-	padding: 0.3rem 0.5rem;
+	padding: 0.35rem 0.5rem 0.35rem 0.5rem;
 	border-radius: 0;
 }
 .fa-bars{
   color: white;
-  font-size: 3.1rem;
+  font-size: 2.5rem;
 
 }
 .navbar{
@@ -38,7 +38,7 @@ body, html{
 .navbar-logo{
 	margin-left: -5px;
 	margin-top: 0px;
-	width: 65px ;
+	width: 55px ;
 }
 .navbar-nav{
 	font-family: $heading-fontstack;
@@ -156,7 +156,8 @@ body, html{
 
 @media (max-width: 992px) {
   .main-header {
- 	height: 100vh;
+  	margin-top: 2.2rem;
+ 	height: auto;
   }
   .header-text h1{
   	font-size: 2.9rem;
@@ -193,6 +194,7 @@ body, html{
 .description-content{
 	font-size: 1.3rem;
 	color: $content-text-color;
+    word-wrap: break-word;	
 }
 .services-list{
 	list-style-type: none;
@@ -218,7 +220,7 @@ body, html{
 	}
 }
 .more-link{
-	display: inline-block;
+	display: none;
 	padding: 10px 15px;
 	font-size: 2rem;
 	color: $accent-color-2;
@@ -266,6 +268,9 @@ body, html{
 		font-weight: 500;
 		font-size: 1.5rem;
 	}
+	div{
+		margin-bottom: 2rem;
+	}
 }
 .icons-stack-features{
 	color: $header-text-color;
@@ -280,7 +285,7 @@ body, html{
 .features-icon{
 	font-size: 5rem;
 	color: $accent-color-2;
-	margin-bottom: 1.5rem;
+	margin-bottom: 0.8rem;
 }
 .features-icon{
 	color: $header-text-color;
