@@ -57,6 +57,9 @@ body, html{
 	color: $accent-color !important;
 /* 	border-bottom: 2px solid $accent-color; */
 }
+.navbar-nav li a:active{
+	color: $accent-color !important;
+}
 @media screen and (min-width: 992px) {
 /* 	.navbar{
 		background-color: transparent !important;
@@ -65,7 +68,7 @@ body, html{
 		background-color: transparent !important;
 	} */
 	.navbar-nav li a{
-		color: white !important;
+		color: $header-text-color !important;
 /* 		border-bottom: 2px solid transparent;
  */		margin: 0 0.8rem;
 		margin-top: 0px;
@@ -156,14 +159,18 @@ body, html{
 
 @media (max-width: 992px) {
   .main-header {
-  	margin-top: 2.2rem;
- 	height: auto;
+  	margin-top: 1.5rem;
+ 	height: 100vh;
   }
   .header-text h1{
-  	font-size: 2.9rem;
+  	font-size: 2.8rem;
   }
   .header-text h2{
-  	font-size: 2rem
+  	font-size: 1.8rem
+  }
+  .header-text i{
+  	margin-top: -1rem;
+	font-size: 5rem;
   }
 }
 /*CONTENT*/
