@@ -15,7 +15,7 @@
 <body>
 
 <!-- NAVBAR START -->
-<nav class="navbar navbar-toggleable-md navbar-inverse navbar-alt fixed-top">
+<!-- <nav class="navbar navbar-toggleable-md navbar-inverse navbar-alt fixed-top">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <i class="fa fa-bars" aria-hidden="true"></i>
   </button>
@@ -39,10 +39,39 @@
       </li>                  
     </ul>
   </div>
-</nav><!-- NAVBAR END -->
+</nav> --><!-- NAVBAR END -->
+
+  <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top"><!-- NAVBAR START -->
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </button>
+    <a class="navbar-brand" href="#" id="navbar-title"><img src="img/logo-raster.png" class="navbar-logo" alt="logo of Northwood Music"></a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>    
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>                                                                      
+      </ul>
+    </div>
+  </nav>
+
+
+
 
 <!-- HEADER START -->
-<header class="main-header">
+<header class="main-header" id="hero">
 	<div class="header-wrapper">
 		<div class="container">
 			<div class="row">
@@ -87,32 +116,32 @@
         <div class="row icons-stack">
           <div class="col-md-4 col-sm-6">
             <i class="fa fa-desktop services-icon" aria-hidden="true"></i>
-            <h4>Static Website</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem sit similique quod impedit, fuga explicabo iusto?</p>
+            <h4>Responsive Websites</h4>
+            <p>Simple, performant solutions, perfect for building online presence for your business</p>
             <a href="#" class="more-link">Read More >></a>
           </div>
           <div class="col-md-4 col-sm-6">
             <i class="fa fa-wordpress services-icon" aria-hidden="true"></i>
-            <h4>Wordpress</h4>
-            <p>Your website will load quickly, satisfying users and search engines</p>
-            <a href="#" class="more-link">Read More >></a>        
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <i class="fa fa-cog services-icon" aria-hidden="true"></i>
-            <h4>Maintenance</h4>
-            <p>We will take care of hosting on affordable, stable servers with databanks in your area</p>
+            <h4>Wordpress Websites</h4>
+            <p>A website built with a powerful Content Management System that lets you manage your website from a user-friendly panel</p>
             <a href="#" class="more-link">Read More >></a>        
           </div>
           <div class="col-md-4 col-sm-6">
             <i class="fa fa-magic services-icon" aria-hidden="true"></i>
             <h4>Redesign</h4>
-            <p>We will make sure your website satisfies modern search engine standards and ranks highly in Google searches</p>
+            <p>If you already have a website, but want to improve and modernize it, we're up for the task</p>
+            <a href="#" class="more-link">Read More >></a>        
+          </div>          
+          <div class="col-md-4 col-sm-6">
+            <i class="fa fa-cog services-icon" aria-hidden="true"></i>
+            <h4>Maintenance</h4>
+            <p>Issues with your site? We can work on your existing site to fix any issues you might have</p>
             <a href="#" class="more-link">Read More >></a>        
           </div>
           <div class="col-md-4 col-sm-6">
             <i class="fa fa-server services-icon" aria-hidden="true"></i>
             <h4>Hosting</h4>
-            <p>We will take care of hosting on affordable, stable servers with databanks in your area</p>
+            <p>We can host your website on fast and reliable servers, or help you migrate from one host to another</p>
             <a href="#" class="more-link">Read More >></a>        
           </div>
           <div class="col-md-4 col-sm-6">      
@@ -131,7 +160,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h2 class="content-title content-title-features">Features of our design</h2>
+          <h2 class="content-title content-title-features">Why us?</h2>
         </div>
       </div>
       <div class="row icons-stack icons-stack-features">
@@ -142,7 +171,7 @@
           <a href="#" class="more-link">Read More >></a>
         </div>
         <div class="col-md-3 col-sm-6">
-          <i class="fa fa-area-chart features-icon" aria-hidden="true"></i>
+          <i class="fa fa-clock-o features-icon" aria-hidden="true"></i>
           <h4>Optimization</h4>
           <p>Your website will load quickly, satisfying users and search engines</p>
           <a href="#" class="more-link">Read More >></a>        
@@ -219,7 +248,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          Lol
+          <p class="description-content">We're happy to hear from you! E-mail us directly at contact@websitedevelopers.tech or use the contact form. We'd love to hear as much as possible about your idea. </p>
         </div>
         <div class="col-md-6">
           <form class="contact-form" method="POST" action="http://formspree.io/tomasz.galina@gmail.com">
@@ -240,6 +269,10 @@
   <div class="container">
     <div class="row">
       <div class="offset-md-2 col-md-8 icons-main">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+        </span>      
         <span class="fa-stack fa-lg">
             <i class="fa fa-circle fa-stack-2x"></i>
             <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
