@@ -20,8 +20,8 @@ body, html {
 .navbar {
   position: fixed !important;
   z-index: 1000;
-  background-color: #000 !important;
-  opacity: 0.93; }
+  background-color: #03020c !important;
+  opacity: 1; }
 
 .navbar-logo {
   margin-left: -5px;
@@ -30,21 +30,21 @@ body, html {
 
 .navbar-nav {
   font-family: "Raleway", "Open Sans", helvetica, arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 400;
-  background-color: #000 !important; }
+  font-weight: 600;
+  background-color: #03020c !important; }
 
 .navbar-nav li a {
   transition: 1s;
   margin-top: 1px;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: #F2F2F2 !important;
-  border-bottom: 2px solid transparent;
+  /* 	border-bottom: 2px solid transparent;
+ */
   opacity: 1; }
 
 .navbar-nav li a:hover {
   color: #029eb4 !important;
-  border-bottom: 2px solid #029eb4; }
+  /* 	border-bottom: 2px solid $accent-color; */ }
 
 @media screen and (min-width: 992px) {
   /* 	.navbar{
@@ -55,12 +55,16 @@ body, html {
 	} */
   .navbar-nav li a {
     color: white !important;
-    border-bottom: 2px solid transparent;
-    margin-top: 20px;
-    font-size: 1.5rem; }
+    /* 		border-bottom: 2px solid transparent;
+ */
+    margin: 0 0.8rem;
+    margin-top: 0px;
+    font-size: 1.4rem; }
   .navbar-logo {
-    width: 120%;
-    margin-top: 13px; } }
+    width: 80px;
+    margin-left: 20px;
+    position: absolute;
+    top: 23px; } }
 
 .dropdown-menu {
   background-color: #000 !important;
