@@ -51,23 +51,15 @@ body, html{
 	margin-top: 1px;
 	font-size: 1.4rem;
 	color: $header-text-color !important;
-/* 	border-bottom: 2px solid transparent;
- */	opacity: 1;
+	opacity: 1;
 }
 .navbar-nav li a:hover{
 	color: $accent-color !important;
-/* 	border-bottom: 2px solid $accent-color; */
 }
 .navbar-nav li a:active{
 	color: $accent-color !important;
 }
 @media screen and (min-width: 992px) {
-/* 	.navbar{
-		background-color: transparent !important;
-	}
-	.navbar-nav{
-		background-color: transparent !important;
-	} */
 	.navbar{
 		height: 15vh;
 		background-color: transparent !important;
@@ -77,8 +69,7 @@ body, html{
 	}
 	.navbar-nav li a{
 		color: $header-text-color !important;
-/* 		border-bottom: 2px solid transparent;
- */		margin: 0 0.8rem;
+		margin: 0 0.8rem;
 		margin-top: 0px;
 		font-size: 1.4rem;
 		background-color: transparent !important;
@@ -143,7 +134,7 @@ body, html{
 	text-align: left;
 	a:hover{
 		color: $accent-color;
-		decoration: none;
+		text-decoration: none;
 	}
 	i{
 		display: block;
@@ -151,12 +142,10 @@ body, html{
 		text-align: center;
 		margin: 0 auto;
 		color: $accent-color;
-		decoration: none;
 	}
-	i:hover{
-		decoration: none;
-	}
+
 }
+
 .header-text h1{
 	font-size: 3.5rem;
 	font-weight: 800;
@@ -165,9 +154,6 @@ body, html{
 	margin-top: 3rem;
 	color: $header-text-color;
 }
-/* .header-text .dot-tech-color{
-	color: $accent-color-2;
-} */
 .header-text hr{
 	border-bottom: 2px solid;
 	width: 100%;
@@ -323,7 +309,7 @@ body, html{
 }
 /* PORTFOLIO */
 .portfolio-wrap{
-	padding: 0rem 0 3rem 0;
+	padding: 0rem 0 2rem 0;
 }
 .portfolio-section{
 	height:510px;
@@ -337,13 +323,16 @@ body, html{
 	font-weight: 700;
 }
 .more-link-portfolio{
+	display: none;
 	border: 0;
-	position: absolute;
-	bottom: 10px;
-	left: 25%;
 	font-size: 1.5rem;
 }
-
+@media (max-width: 992px) {
+	.portfolio-section{
+		height: auto;
+		padding-bottom: 1rem;
+	}
+}
 /* TESTIMONIALS */
 
 .testimonial-background{
@@ -383,11 +372,17 @@ body, html{
 	}	
 }
 /* CONTACT */
-
+.contact{
+	border-top: 1px solid lightgrey;
+}
+.description-contact{
+	font-size: 1rem;
+	margin-top: -1rem;
+}
 .contact-form{
 	input, textarea{
 		display: block;
-		width:90%;
+		width:100%;
 		border: 1px solid rgba(0,0,0,0.2);
 		margin: 1rem auto;
 		font-family: "Open Sans", helvetica, arial, sans-serif;
@@ -403,8 +398,15 @@ body, html{
 		text-align: center;	
 		margin: 0 auto;
 		font-family: "Open Sans", helvetica, arial, sans-serif;
-		background-color: $accent-color-2;
-		border: 1px solid rgba(0,0,0,0.2)
+		background-color: rgba(0,0,0,0.1);
+		border: 1px solid rgba(0,0,0,0.2);
+		padding: 10px 15px;
+		color: $content-text-color;
+		transition: 1s;
+		font-size: 1.2rem;
+	}
+	button:hover{
+		background-color: rgba(0,0,0,0.2);
 	}
 }
 
@@ -419,6 +421,9 @@ body, html{
 	margin-top: 3rem;
 	margin-bottom: 3rem;
 	font-size: 1.5rem;
+	a{
+		text-decoration: none;
+	}
 }
 .fa-circle{
 	color: $accent-color-2;
@@ -440,4 +445,10 @@ body, html{
 }
 .anchor-contact{
 	top: -82px;
+}
+
+@media (max-width: 992px) {
+	.anchor{
+		top: -78px;
+	}
 }
