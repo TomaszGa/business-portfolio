@@ -12,7 +12,8 @@ body, html{
 	font-family: "Open Sans", helvetica, arial, sans-serif;
 	background-color: $header-text-color;
 	box-sizing: border-box;
-
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;	
 }
 /*NAVBAR*/
 .navbar-toggler{
@@ -452,3 +453,5 @@ body, html{
 		top: -78px;
 	}
 }
+
+/* MAILCHIMP TEMPORARY CSS */
