@@ -40,7 +40,7 @@ body, html{
 .navbar-logo{
 	margin-left: -5px;
 	margin-top: 0px;
-	width: 55px ;
+	width: 55px;
 }
 .navbar-nav{
 	font-family: $heading-fontstack;
@@ -126,7 +126,7 @@ body, html{
 .header-wrapper{
 	height: 100%;
 	width: 100%;
-	background-color: rgba(0, 0, 15, 0.5);
+	background-color: rgba(0, 0, 15, 0.3);
 	display: flex;
 	align-items: center;
 }
@@ -313,7 +313,7 @@ body, html{
 	padding: 0rem 0 2rem 0;
 }
 .portfolio-section{
-	height:510px;
+	height:410px;
 	transition: 1s;
 }
 	
@@ -327,6 +327,11 @@ body, html{
 	display: none;
 	border: 0;
 	font-size: 1.5rem;
+}
+.description-content-faq{
+	font-size: 1.1rem;
+	color: $content-text-color;
+    word-wrap: break-word;	
 }
 @media (max-width: 992px) {
 	.portfolio-section{

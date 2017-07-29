@@ -109,7 +109,7 @@ body, html {
 .header-wrapper {
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 15, 0.5);
+  background-color: rgba(0, 0, 15, 0.3);
   display: flex;
   align-items: center; }
 
@@ -280,7 +280,7 @@ body, html {
   padding: 0rem 0 2rem 0; }
 
 .portfolio-section {
-  height: 510px;
+  height: 410px;
   transition: 1s; }
 
 .portfolio-subheading {
@@ -293,6 +293,11 @@ body, html {
   display: none;
   border: 0;
   font-size: 1.5rem; }
+
+.description-content-faq {
+  font-size: 1.1rem;
+  color: #444;
+  word-wrap: break-word; }
 
 @media (max-width: 992px) {
   .portfolio-section {
