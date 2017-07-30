@@ -1,4 +1,8 @@
 $(document).ready(function(){
+	setTimeout(function(){
+      	$('#global-nav').addClass('navbar-transition');
+      	$('.navbar-logo').addClass('navbar-logo-transition');		      			
+	}, 500);
 	var scrollTop = 0;
 	$(window).scroll(function(){
     scrollTop = $(window).scrollTop();
@@ -36,6 +40,9 @@ $(document).ready(function(){
 	$('.navbar-nav>li>a').on('click', function(){
     	$('.navbar-collapse').collapse('hide');
 	});
+	$('.navbar-brand').on('click', function(){
+    	$('.navbar-collapse').collapse('hide');
+	});	
 	setTimeout(function(){
 		$('#myModal').modal();
 	}, 5000);

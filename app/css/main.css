@@ -19,13 +19,14 @@ body, html {
 
 .fa-bars {
   color: white;
-  font-size: 2.5rem; }
+  font-size: 40px; }
 
 .navbar {
   position: fixed !important;
   z-index: 1000;
-  background-color: #03020c !important;
-  opacity: 1;
+  background-color: #03020c !important; }
+
+.navbar-transition {
   transition: 0.7s; }
 
 .navbar-logo {
@@ -53,7 +54,7 @@ body, html {
 
 @media screen and (min-width: 992px) {
   .navbar {
-    height: 15vh;
+    height: 102px;
     background-color: transparent !important; }
   .navbar-nav {
     background-color: transparent !important; }
@@ -61,17 +62,18 @@ body, html {
     color: #F2F2F2 !important;
     margin: 0 0.8rem;
     margin-top: 0px;
-    font-size: 1.4rem;
+    font-size: 22.5px;
     background-color: transparent !important; }
   .navbar-logo {
-    width: 80px;
-    margin-left: 20px;
+    width: 85px;
+    margin-left: 30px;
     position: absolute;
-    top: 23px;
-    transition: 0.8s;
-    box-shadow: 2px 2px 10px #F2F2F2; }
+    top: 25px;
+    border-radius: 30%; }
+  .navbar-logo-transition {
+    transition: 0.8s; }
   .scrolled-nav {
-    height: 8vh;
+    height: 54px;
     background-color: #F2F2F2 !important;
     border-bottom: 1px solid lightgrey; }
     .scrolled-nav .navbar-nav li a {
@@ -79,7 +81,12 @@ body, html {
     .scrolled-nav .navbar-nav li a:hover {
       color: #52d4e2 !important; }
     .scrolled-nav .navbar-logo {
-      top: 5px; } }
+      top: 5px;
+      background-color: #029eb4;
+      border-radius: 50%;
+      opacity: 0.97; }
+    .scrolled-nav .navbar-logo:hover {
+      background-color: #52d4e2; } }
 
 .dropdown-menu {
   background-color: #000 !important;
