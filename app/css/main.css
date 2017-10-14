@@ -48,7 +48,6 @@ body, html {
   color: #444; }
 
 .content-image {
-  border-radius: 5px;
   margin-bottom: 2rem; }
 
 .content-section {
@@ -317,7 +316,7 @@ body, html {
     flex-basis: 100%; }
   .portfolio-item-overlay .portfolio-link {
     position: absolute;
-    bottom: 20px; }
+    bottom: 30px; }
 
 /* TESTIMONIALS */
 .testimonial-background {
