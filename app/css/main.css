@@ -301,9 +301,6 @@ body, html {
 .portfolio-item-overlay {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
   opacity: 0;
   background: #029eb4;
   position: absolute;
@@ -319,7 +316,8 @@ body, html {
   .portfolio-item-overlay h3, .portfolio-item-overlay p {
     flex-basis: 100%; }
   .portfolio-item-overlay .portfolio-link {
-    align-self: flex-end; }
+    position: absolute;
+    bottom: 20px; }
 
 /* TESTIMONIALS */
 .testimonial-background {
