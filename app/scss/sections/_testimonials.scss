@@ -1,0 +1,37 @@
+
+.testimonial-background{
+  background: url(../img/laptop.jpg) center center;
+  background-attachment: fixed;
+  background-size: cover;
+  border-top: 1px #999 solid;
+  border-bottom: 1px #999 solid;
+}
+
+.testimonial-overlay{
+  background-color: rgba(0, 0, 25, 0.7);
+  background-clip: border-box;
+  height: 100%;
+  width: 100%;
+}
+.testimonial-text{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: $header-text-color;
+  h3{
+    font-family: $heading-fontstack;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  p{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-style: italic;
+  }
+  .testimonial-author{
+    text-align: right;
+    margin-right: 5rem;
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: $accent-color-2;
+  } 
+}

@@ -1,0 +1,106 @@
+.navbar-toggler{
+  margin-top: 0.28rem;
+  border-top: 1px solid white !important;
+  border-bottom: 1px solid white !important;  
+  border-left: 2px solid white !important;
+  border-right: 2px solid white !important;
+  padding: 0.35rem 0.5rem 0.35rem 0.5rem;
+  border-radius: 0;
+}
+.fa-bars{
+  color: white;
+  font-size: 40px;
+
+}
+.navbar{
+  position: fixed !important;
+  z-index: 1000;
+  background-color: rgba(3,2,12,1) !important;
+}
+ .navbar-transition{
+  transition: 0.7s;
+ }
+.navbar-logo{
+  margin-left: -5px;
+  margin-top: 0px;
+  width: 55px;
+}
+.navbar-nav{
+  font-family: $heading-fontstack;
+  font-weight: 600;
+  background-color: rgba(3,2,12,1) !important;
+}
+.navbar-nav li a{
+  transition: 1s;
+  margin-top: 1px;
+  font-size: 1.4rem;
+  color: $header-text-color !important;
+  opacity: 1;
+}
+.navbar-nav li a:hover{
+  color: $accent-color !important;
+}
+.navbar-nav li a:active{
+  color: $accent-color !important;
+}
+@media screen and (min-width: 992px) {
+  .navbar{
+    height: 102px;
+    background-color: transparent !important;
+  }
+  .navbar-nav{
+    background-color: transparent !important;
+  }
+  .navbar-nav li a{
+    color: $header-text-color !important;
+    margin: 0 0.8rem;
+    margin-top: 0px;
+    font-size: 22.5px;
+    background-color: transparent !important;
+  } 
+  .navbar-logo{
+    width: 85px;
+    margin-left: 30px;
+    position: absolute;
+    top: 25px;
+    border-radius: 30%;
+  }
+  .navbar-logo-transition{
+    transition: 0.8s;
+  }
+  .scrolled-nav{
+    height: 54px;
+    background-color: $header-text-color !important;
+    border-bottom: 1px solid lightgrey;
+    .navbar-nav li a{
+      color: $accent-color !important;
+    }
+    .navbar-nav li a:hover{
+      color: $accent-color-2 !important;
+    }
+    .navbar-logo{
+      top: 5px;
+      background-color: $accent-color;
+      border-radius: 50%;
+      opacity: 0.97;
+    }
+    .navbar-logo:hover{
+      background-color: $accent-color-2;
+    }
+  }
+}
+.dropdown-menu{
+  background-color: #000 !important;
+  opacity: 0.8;
+}
+.dropdown-menu .dropdown-item{
+  color: $header-text-color !important;
+  background-color: black;
+  font-size: 1rem;
+  text-align: left;
+  margin-top: 5px;
+  border-bottom: 2px solid #000;
+}
+.dropdown-item:hover{
+  background-color: #000 !important;
+}

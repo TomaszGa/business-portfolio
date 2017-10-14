@@ -1,0 +1,70 @@
+.main-header{
+  background: url(../img/coding1.jpg) center center;
+  background-size: cover;
+/*  background-attachment: fixed;
+ */ width: 100%;
+  height: 100.1vh;
+  border-bottom: 1px solid lightgrey;
+}
+
+.header-wrapper{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 15, 0.3);
+  display: flex;
+  align-items: center;
+}
+.header-text{
+  color: $header-text-color;
+  text-align: left;
+  a:hover{
+    color: $accent-color;
+    text-decoration: none;
+  }
+  i{
+    display: block;
+    font-size: 5rem;
+    text-align: center;
+    margin: 0 auto;
+    color: $accent-color;
+  }
+
+}
+
+.header-text h1{
+  font-size: 3.5rem;
+  font-weight: 800;
+  font-family: $heading-fontstack;  
+  text-transform: uppercase;
+  margin-top: 3rem;
+  color: $header-text-color;
+}
+.header-text hr{
+  border-bottom: 2px solid;
+  width: 100%;
+  color: $accent-color;
+}
+.header-text h2{
+  font-family: $heading-fontstack;
+  font-size: 2.1rem;    
+  font-weight: 500;
+  color: $header-text-color;
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .main-header {
+    margin-top: 1.5rem;
+  height: 100vh;
+  }
+  .header-text h1{
+    font-size: 2.8rem;
+  }
+  .header-text h2{
+    font-size: 1.8rem
+  }
+  .header-text i{
+    margin-top: -1rem;
+  font-size: 5rem;
+  }
+}

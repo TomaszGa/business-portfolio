@@ -1,0 +1,59 @@
+.features-wrap{
+  background-color: #ECECEC;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  background: url(../img/design1.jpg) center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.features-overlay{
+  background-color: rgba(0,0,10,0.9);
+}
+.content-title-features{
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  color: $header-text-color;
+}
+.icons-stack{
+  text-align: center;
+
+  p{
+    font-size: 1rem;
+    margin: 0;
+    margin-bottom: 0rem;
+  }
+  .more-link{
+    padding: 0;
+    border: 0;
+    margin-bottom: 3.5rem;
+    color: #444;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  div{
+    margin-bottom: 2rem;
+  }
+}
+.icons-stack-features{
+  color: $header-text-color;
+  .more-link{
+    color: $header-text-color;
+  }
+  h4{
+    color: $header-text-color;
+  }
+}
+.services-wrap{
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey; 
+}
+
+.services-icon,
+.features-icon{
+  font-size: 5rem;
+  color: $accent-color-2;
+  margin-bottom: 0.8rem;
+}
+.features-icon{
+  color: $header-text-color;
+}
