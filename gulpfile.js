@@ -5,9 +5,11 @@
     const autoprefixer = require('gulp-autoprefixer');
     const cleanCSS = require('gulp-clean-css');
     const htmlmin = require('gulp-htmlmin');
+    const wait = require('gulp-wait');
 
     gulp.task('sass', function(){
         return gulp.src("app/scss/**/*.scss")
+        .pipe(wait(1500))
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest("app/css"))
         .pipe(browserSync.reload({

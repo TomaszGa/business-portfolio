@@ -7,6 +7,9 @@ body, html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+main {
+  overflow: hidden; }
+
 a {
   color: #029eb4; }
   a:hover, a:focus {
@@ -29,21 +32,38 @@ a {
     color: #029eb4;
     font-weight: 800;
     font-size: 2.3rem; }
-  .content-title ::before {
+
+.decoration-1 {
+  width: 2px;
+  position: absolute;
+  left: 0%;
+  top: 250%;
+  height: 200px;
+  background: #029eb4; }
+
+.decoration-2 {
+  width: 1000px;
+  position: absolute;
+  left: 101%;
+  bottom: 44%;
+  height: 2px;
+  background: #029eb4; }
+
+.content-title-decorated {
+  transition: 1s; }
+  .content-title-decorated ::before {
     content: '';
     width: 2px;
     position: absolute;
     left: 0%;
-    top: 100%;
+    top: 250%;
     height: 200px;
     background: #029eb4; }
-    .content-title ::before:hover {
-      background: #52d4e2; }
-  .content-title ::after {
+  .content-title-decorated ::after {
     content: '';
-    width: 10000px;
+    width: 1000px;
     position: absolute;
-    left: 59.5%;
+    left: 101%;
     bottom: 44%;
     height: 2px;
     background: #029eb4; }
