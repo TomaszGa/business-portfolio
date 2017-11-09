@@ -40,20 +40,22 @@ a {
   width: 2px;
   position: absolute;
   left: 0%;
-  top: 250%;
+  top: 125%;
   height: 200px;
   background: $accent-color;
-  transition: 0.15s;   
+  transition: 0.15s;
+  transform: translatey(250px);   
 }
 
 .decoration-2 {
   width: 1000px;
   position: absolute;
-  left: 100%;
+  left: 59%;
   bottom: 42.5%;
   height: 2px;
   background: $accent-color;
   transition: 0.15s;
+  transform: translatex(500px);     
 }
 .content-title-decorated {
   transition: 1s;
