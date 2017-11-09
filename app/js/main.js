@@ -53,6 +53,6 @@ $(document).ready(function(){
 
 $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
-    console.log(scroll);
-    $('.decoration-1').css('top', 250);
+    $('.decoration-1').css('top', 250 - (0.2*scroll) + '%' );
+    $('.decoration-2').css('left', 99.7 - (0.0658*scroll) + '%' );
 });
