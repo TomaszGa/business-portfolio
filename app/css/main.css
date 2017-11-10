@@ -374,6 +374,8 @@ a {
   .portfolio-item-overlay .portfolio-link {
     position: absolute;
     bottom: 30px; }
+    .portfolio-item-overlay .portfolio-link a {
+      color: #f2f2f2; }
 
 /* TESTIMONIALS */
 .testimonial-background {
@@ -423,7 +425,7 @@ a {
 
 .contact-form input, .contact-form textarea {
   display: block;
-  width: 100%;
+  width: 90%;
   border: 1px solid rgba(0, 0, 0, 0.2);
   margin: 1rem auto;
   font-family: "Open Sans", helvetica, arial, sans-serif;
