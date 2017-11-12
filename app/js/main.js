@@ -54,5 +54,5 @@ $(document).ready(function(){
 $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
     $('.decoration-1').css('transform', 'translatey(' + (250 - scroll * 0.405) + 'px)' );
-    $('.decoration-2').css('transform', 'translatex(' + (500 - scroll * 0.81) + 'px)' );
+    $('.decoration-2').css('transform', 'translatex(' + (500 - scroll * 0.91) + 'px)' );
 });

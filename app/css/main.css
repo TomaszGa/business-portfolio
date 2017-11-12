@@ -1,7 +1,7 @@
 /*GLOBAL*/
 body, html {
   height: 100%;
-  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-family: "Roboto", helvetica, arial, sans-serif;
   background-color: #F2F2F2;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -18,21 +18,21 @@ a {
 .content-text {
   margin: 2.5rem 0;
   text-align: left;
-  color: #444; }
+  color: #292b2c; }
 
 .content-title {
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   letter-spacing: 0.3px;
-  font-family: "Raleway", "Open Sans", helvetica, arial, sans-serif;
+  font-family: "Roboto", helvetica, arial, sans-serif;
   text-align: left;
   margin-top: 3rem;
-  margin-bottom: 4rem;
-  color: #444; }
+  margin-bottom: 2rem;
+  color: #292b2c; }
   .content-title .highlighted {
     color: #029eb4;
     font-weight: 800;
-    font-size: 3rem; }
+    font-size: 3.5rem; }
 
 .decoration-1 {
   width: 2px;
@@ -42,17 +42,19 @@ a {
   height: 200px;
   background: #029eb4;
   transition: 0.15s;
-  transform: translatey(250px); }
+  transform: translatey(250px);
+  opacity: 0.8; }
 
 .decoration-2 {
-  width: 1000px;
+  width: 360px;
   position: absolute;
   left: 59%;
-  top: 5.9rem;
-  height: 2px;
+  top: 101px;
+  height: 5px;
   background: #029eb4;
   transition: 0.15s;
-  transform: translatex(500px); }
+  transform: translatex(500px);
+  opacity: 0.5; }
 
 .content-title-decorated {
   transition: 1s; }
@@ -75,16 +77,16 @@ a {
 
 .content-subtitle {
   font-size: 1.4rem;
-  font-family: "Raleway", "Open Sans", helvetica, arial, sans-serif; }
+  font-family: "Roboto", helvetica, arial, sans-serif; }
 
 .description-heading {
-  font-family: "Raleway", "Open Sans", helvetica, arial, sans-serif;
+  font-family: "Roboto", helvetica, arial, sans-serif;
   font-size: 2.2rem;
-  color: #444; }
+  color: #292b2c; }
 
 .description-content {
   font-size: 1rem;
-  color: #444;
+  color: #292b2c;
   word-wrap: break-word; }
 
 .services-list {
@@ -96,7 +98,7 @@ a {
 
 .content-info {
   font-size: 0.8rem;
-  color: #444; }
+  color: #292b2c; }
 
 .content-image {
   margin-bottom: 2rem; }
@@ -113,7 +115,7 @@ a {
   padding: 10px 15px;
   font-size: 2rem;
   color: #52d4e2;
-  font-family: "Raleway", "Open Sans", helvetica, arial, sans-serif;
+  font-family: "Roboto", helvetica, arial, sans-serif;
   font-weight: 900;
   vertical-align: bottom; }
 
@@ -148,7 +150,7 @@ a {
   width: 55px; }
 
 .navbar-nav {
-  font-family: "Raleway", "Open Sans", helvetica, arial, sans-serif;
+  font-family: "Roboto", helvetica, arial, sans-serif;
   font-weight: 600;
   background-color: #03020c !important; }
 
@@ -249,7 +251,7 @@ a {
 .header-text h1 {
   font-size: 3.5rem;
   font-weight: 800;
-  font-family: "Raleway", "Open Sans", helvetica, arial, sans-serif;
+  font-family: "Roboto", helvetica, arial, sans-serif;
   text-transform: uppercase;
   margin-top: 3rem;
   color: #F2F2F2; }
@@ -260,7 +262,7 @@ a {
   color: #029eb4; }
 
 .header-text h2 {
-  font-family: "Raleway", "Open Sans", helvetica, arial, sans-serif;
+  font-family: "Roboto", helvetica, arial, sans-serif;
   font-size: 2.1rem;
   font-weight: 500;
   color: #F2F2F2;
@@ -291,7 +293,7 @@ a {
 
 .content-title-features {
   margin-top: 3rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   color: #F2F2F2; }
 
 .icons-stack {
@@ -349,10 +351,44 @@ a {
   .portfolio-item img {
     height: auto;
     width: 110%; }
+  .portfolio-item .thumbnail-1 {
+    width: 190%;
+    position: absolute;
+    top: -0px;
+    left: -110px; }
+    @media (min-width: 425px) {
+      .portfolio-item .thumbnail-1 {
+        left: -150px;
+        top: -40px; } }
+    @media (min-width: 768px) {
+      .portfolio-item .thumbnail-1 {
+        width: 122%; } }
+    @media (min-width: 768px) {
+      .portfolio-item .thumbnail-1 {
+        width: 100%;
+        position: static; } }
+  .portfolio-item .thumbnail-2 {
+    width: 120%;
+    position: absolute;
+    left: -35px; }
   .portfolio-item .thumbnail-3 {
-    width: 200%; }
+    width: 250%;
+    position: absolute;
+    left: -220px; }
   .portfolio-item .thumbnail-4 {
-    width: 101%; }
+    width: 251%;
+    position: absolute;
+    left: -230px; }
+    @media (min-width: 375px) {
+      .portfolio-item .thumbnail-4 {
+        width: 225%; } }
+    @media (min-width: 425px) {
+      .portfolio-item .thumbnail-4 {
+        width: 210%; } }
+    @media (min-width: 768px) {
+      .portfolio-item .thumbnail-4 {
+        width: 122%;
+        left: -75px; } }
 
 .portfolio-item-overlay {
   width: 100%;
@@ -373,9 +409,17 @@ a {
     flex-basis: 100%; }
   .portfolio-item-overlay .portfolio-link {
     position: absolute;
-    bottom: 30px; }
+    bottom: 20px; }
     .portfolio-item-overlay .portfolio-link a {
       color: #f2f2f2; }
+
+.portfolio-support-text {
+  font-size: 1rem;
+  margin-bottom: 0; }
+
+@media (min-width: 1024px) {
+  .portfolio-item {
+    height: 400px; } }
 
 /* TESTIMONIALS */
 .testimonial-background {
@@ -440,7 +484,7 @@ a {
   background-color: rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 10px 15px;
-  color: #444;
+  color: #292b2c;
   transition: 1s;
   font-size: 1.2rem; }
 

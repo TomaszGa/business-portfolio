@@ -1,6 +1,6 @@
 body, html {
   height: 100%;
-  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-family: $body-fontstack;
   background-color: $header-text-color;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -25,15 +25,16 @@ a {
     .highlighted {
       color: $accent-color;
       font-weight: 800;
-      font-size: 3rem;      
+      //font-size: 3rem;      
+      font-size: 3.5rem;
     }
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   letter-spacing: 0.3px;
   font-family: $heading-fontstack;
   text-align: left;
   margin-top: 3rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   color: $content-text-color;
 }
 .decoration-1 {
@@ -44,18 +45,20 @@ a {
   height: 200px;
   background: $accent-color;
   transition: 0.15s;
-  transform: translatey(250px);   
+  transform: translatey(250px);  
+  opacity: 0.8; 
 }
 
 .decoration-2 {
-  width: 1000px;
+  width: 360px;
   position: absolute;
   left: 59%;
-  top: 5.9rem;
-  height: 2px;
+  top: 101px;
+  height: 5px;
   background: $accent-color;
   transition: 0.15s;
-  transform: translatex(500px);     
+  transform: translatex(500px);  
+  opacity: 0.5;   
 }
 .content-title-decorated {
   transition: 1s;
