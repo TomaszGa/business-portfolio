@@ -9,7 +9,7 @@
 
     gulp.task('sass', function(){
         return gulp.src("app/scss/**/*.scss")
-        .pipe(wait(1500))
+        .pipe(wait(300))
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest("app/css"))
         .pipe(browserSync.reload({
