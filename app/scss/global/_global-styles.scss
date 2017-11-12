@@ -37,29 +37,7 @@ a {
   margin-bottom: 2rem;
   color: $content-text-color;
 }
-.decoration-1 {
-  width: 2px;
-  position: absolute;
-  left: 0%;
-  top: 125%;
-  height: 200px;
-  background: $accent-color;
-  transition: 0.15s;
-  transform: translatey(250px);  
-  opacity: 0.8; 
-}
 
-.decoration-2 {
-  width: 360px;
-  position: absolute;
-  left: 59%;
-  top: 101px;
-  height: 5px;
-  background: $accent-color;
-  transition: 0.15s;
-  transform: translatex(500px);  
-  opacity: 0.5;   
-}
 .content-title-decorated {
   transition: 1s;
   ::before {

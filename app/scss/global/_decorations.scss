@@ -1,0 +1,28 @@
+.decoration-1 {
+  //display: none;
+  width: 5px;
+  position: absolute;
+  left: 0%;
+  top: 140%;
+  height: 200px;
+  background: $accent-color;
+  transition: 0.15s;
+  transform: translatey(210px);  
+  opacity: 0.5;
+
+}
+
+.decoration-2 {
+  width: 500px;
+  position: absolute;
+  left: 59%;
+  top: 101px;
+  height: 5px;
+  background: $accent-color;
+  transition: 0.15s;
+  transform: translatex(500px);  
+  opacity: 0.5;  
+  @media (min-width: 1200px) { 
+    display: none;
+  }   
+}

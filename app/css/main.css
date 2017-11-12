@@ -34,28 +34,6 @@ a {
     font-weight: 800;
     font-size: 3.5rem; }
 
-.decoration-1 {
-  width: 2px;
-  position: absolute;
-  left: 0%;
-  top: 125%;
-  height: 200px;
-  background: #029eb4;
-  transition: 0.15s;
-  transform: translatey(250px);
-  opacity: 0.8; }
-
-.decoration-2 {
-  width: 360px;
-  position: absolute;
-  left: 59%;
-  top: 101px;
-  height: 5px;
-  background: #029eb4;
-  transition: 0.15s;
-  transform: translatex(500px);
-  opacity: 0.5; }
-
 .content-title-decorated {
   transition: 1s; }
   .content-title-decorated ::before {
@@ -121,6 +99,31 @@ a {
 
 .more-link:hover {
   color: #52d4e2; }
+
+.decoration-1 {
+  width: 5px;
+  position: absolute;
+  left: 0%;
+  top: 140%;
+  height: 200px;
+  background: #029eb4;
+  transition: 0.15s;
+  transform: translatey(210px);
+  opacity: 0.5; }
+
+.decoration-2 {
+  width: 500px;
+  position: absolute;
+  left: 59%;
+  top: 101px;
+  height: 5px;
+  background: #029eb4;
+  transition: 0.15s;
+  transform: translatex(500px);
+  opacity: 0.5; }
+  @media (min-width: 1200px) {
+    .decoration-2 {
+      display: none; } }
 
 /*NAVBAR*/
 .navbar-toggler {

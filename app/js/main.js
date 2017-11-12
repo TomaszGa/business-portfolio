@@ -53,6 +53,14 @@ $(document).ready(function(){
 
 $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
-    $('.decoration-1').css('transform', 'translatey(' + (250 - scroll * 0.405) + 'px)' );
-    $('.decoration-2').css('transform', 'translatex(' + (500 - scroll * 0.91) + 'px)' );
+    if (scroll < 650) {
+    	$('.decoration-1').css('transform', 'translatey(' + (250 - scroll * 0.405) + 'px)' );
+	} else {
+    	$('.decoration-1').css('transform', 'translatey( -20px)' );		
+	}
+    if (scroll < 570) {
+    	$('.decoration-2').css('transform', 'translatex(' + (500 - scroll * 0.91) + 'px)' );
+	} else {
+	    $('.decoration-2').css('transform', 'translatex(' + (500 - 567 * 0.91) + 'px)' );	
+	}
 });
