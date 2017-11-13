@@ -53,11 +53,7 @@ $(document).ready(function(){
 
 $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
-    if (scroll < 650) {
-    	$('.decoration-1').css('transform', 'translatey(' + (250 - scroll * 0.405) + 'px)' );
-	} else {
-    	$('.decoration-1').css('transform', 'translatey( -20px)' );		
-	}
+    $('.decoration-1').css('transform', 'translatey(' + (250 - scroll * 0.445) + 'px)' );
     if (scroll < 570) {
     	$('.decoration-2').css('transform', 'translatex(' + (500 - scroll * 0.91) + 'px)' );
 	} else {

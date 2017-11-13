@@ -35,7 +35,7 @@ a {
   text-align: left;
   margin-top: 3rem;
   margin-bottom: 2rem;
-  color: $content-text-color;
+  color: $content-heading-color;
 }
 
 .content-title-decorated {
@@ -74,7 +74,7 @@ a {
   font-size: 1rem;
   color: $content-text-color;
   word-wrap: break-word;
-
+  
 }
 .services-list{
   list-style-type: none;
@@ -95,10 +95,12 @@ a {
   text-align: center;
   p{
     text-align: left;
+    color: #444;
   }
   h3{
     text-align: left;
-
+    font-size: 2rem;
+    color: $content-heading-color;
   }
 }
 .more-link{
@@ -112,4 +114,10 @@ a {
 }
 .more-link:hover{
   color: $accent-color-2;
+}
+
+.img-flex-container{
+  display: flex;
+  height: 100%;
+  align-items: center;
 }

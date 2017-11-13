@@ -1,5 +1,9 @@
 .contact{
   border-top: 1px solid lightgrey;
+  h3{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
 }
 .description-contact{
   font-size: 1rem;
@@ -8,10 +12,10 @@
 .contact-form{
   input, textarea{
     display: block;
-    width:90%;
+    width:100%;
     border: 1px solid rgba(0,0,0,0.2);
     margin: 1rem auto;
-    font-family: "Open Sans", helvetica, arial, sans-serif;
+    font-family: $body-fontstack;
     background-color: white;
   }
   textarea{
@@ -23,7 +27,7 @@
     width: 50%;
     text-align: center; 
     margin: 0 auto;
-    font-family: "Open Sans", helvetica, arial, sans-serif;
+    font-family: $body-fontstack;
     background-color: rgba(0,0,0,0.1);
     border: 1px solid rgba(0,0,0,0.2);
     padding: 10px 15px;

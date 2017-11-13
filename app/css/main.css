@@ -18,7 +18,7 @@ a {
 .content-text {
   margin: 2.5rem 0;
   text-align: left;
-  color: #292b2c; }
+  color: #444; }
 
 .content-title {
   font-weight: 600;
@@ -60,11 +60,11 @@ a {
 .description-heading {
   font-family: "Roboto", helvetica, arial, sans-serif;
   font-size: 2.2rem;
-  color: #292b2c; }
+  color: #444; }
 
 .description-content {
   font-size: 1rem;
-  color: #292b2c;
+  color: #444;
   word-wrap: break-word; }
 
 .services-list {
@@ -76,7 +76,7 @@ a {
 
 .content-info {
   font-size: 0.8rem;
-  color: #292b2c; }
+  color: #444; }
 
 .content-image {
   margin-bottom: 2rem; }
@@ -84,9 +84,12 @@ a {
 .content-section {
   text-align: center; }
   .content-section p {
-    text-align: left; }
+    text-align: left;
+    color: #444; }
   .content-section h3 {
-    text-align: left; }
+    text-align: left;
+    font-size: 2rem;
+    color: #292b2c; }
 
 .more-link {
   display: none;
@@ -99,6 +102,11 @@ a {
 
 .more-link:hover {
   color: #52d4e2; }
+
+.img-flex-container {
+  display: flex;
+  height: 100%;
+  align-items: center; }
 
 .decoration-1 {
   width: 5px;
@@ -371,13 +379,17 @@ a {
         width: 100%;
         position: static; } }
   .portfolio-item .thumbnail-2 {
-    width: 120%;
+    width: 130%;
     position: absolute;
-    left: -35px; }
+    left: -35px;
+    top: -20px; }
   .portfolio-item .thumbnail-3 {
     width: 250%;
     position: absolute;
     left: -220px; }
+    @media (min-width: 768px) {
+      .portfolio-item .thumbnail-3 {
+        left: -0px; } }
   .portfolio-item .thumbnail-4 {
     width: 251%;
     position: absolute;
@@ -418,7 +430,8 @@ a {
 
 .portfolio-support-text {
   font-size: 1rem;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  color: #444; }
 
 @media (min-width: 1024px) {
   .portfolio-item {
@@ -461,6 +474,9 @@ a {
 /* CONTACT */
 .contact {
   border-top: 1px solid lightgrey; }
+  .contact h3 {
+    margin-top: 3rem;
+    margin-bottom: 2rem; }
 
 .description-contact {
   font-size: 1rem;
@@ -468,10 +484,10 @@ a {
 
 .contact-form input, .contact-form textarea {
   display: block;
-  width: 90%;
+  width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.2);
   margin: 1rem auto;
-  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-family: "Roboto", helvetica, arial, sans-serif;
   background-color: white; }
 
 .contact-form textarea {
@@ -483,11 +499,11 @@ a {
   width: 50%;
   text-align: center;
   margin: 0 auto;
-  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-family: "Roboto", helvetica, arial, sans-serif;
   background-color: rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 10px 15px;
-  color: #292b2c;
+  color: #444;
   transition: 1s;
   font-size: 1.2rem; }
 

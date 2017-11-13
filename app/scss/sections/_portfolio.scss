@@ -4,6 +4,8 @@
   border-top: 1px solid lightgrey;
 }
 
+
+
 .portfolio-items [class^="col"] {
     padding-left: 5px;
     padding-right: 5px;
@@ -38,14 +40,18 @@
     }
   } 
   .thumbnail-2 {
-    width: 120%;
+    width: 130%;
     position: absolute;
     left: -35px;
+    top: -20px;
   }
   .thumbnail-3 {
     width: 250%;
     position: absolute;
     left: -220px;
+    @media (min-width: 768px) {
+      left: -0px;
+    }      
   }
   .thumbnail-4 {
     width: 251%;
@@ -96,6 +102,7 @@
 .portfolio-support-text {
   font-size: 1rem;
   margin-bottom: 0;
+  color: $content-text-color;
 }
 
 @media (min-width: 1024px) {
