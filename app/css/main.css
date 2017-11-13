@@ -33,6 +33,12 @@ a {
     color: #029eb4;
     font-weight: 800;
     font-size: 3.5rem; }
+    @media (max-width: 425px) {
+      .content-title .highlighted {
+        font-size: 3rem; } }
+    @media (max-width: 375px) {
+      .content-title .highlighted {
+        font-size: 2.5rem; } }
 
 .content-title-decorated {
   transition: 1s; }
